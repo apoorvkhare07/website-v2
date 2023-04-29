@@ -12,7 +12,7 @@ class Contact extends Component{
                     <Col lg= {4} xs = {12} className = "note">
                         {/* <p> Let's talk, write to me at apoorvkhare007@gmail.com </p> */}
 
-                    <p>
+                    <p className="builtWithLove"> 
                         Built & designed with ❤️
                     </p>
 

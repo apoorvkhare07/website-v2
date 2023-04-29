@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import TopNav from './nav2.js'
-import Home from './Home.js'
+import Home from './Pages/Home.js'
 import Container from 'react-bootstrap/Container'
 import About from './Pages/About.js'
 import {Route, Routes} from 'react-router-dom'
 import Contact from './Contact.js'
-import Blogs from './blogs.js'
+import Blogs from './Pages/blogs.js'
 import Works from './Pages/works.js'
 import Resume from './Pages/Resume.js'
 

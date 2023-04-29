@@ -16,14 +16,19 @@ class TopNav extends Component {
   }
 
   kaomojis = [
-    '(´•ᴗ•`)ノ', 
-    '(◕ᴗ◕)◞*',
     '[❛▽❛]ﾉﾟ',
+    '(´•ᴗ•`)ノ', 
+      '[ˇヮˇ]ﾉ',
+      '(^◡^)ﾉﾟ',
+      '[^ᴗ^]ﾉﾟ',
+      '(◕ᴗ◕)◞*',
+      '[◕ヮ◕]ﾉ',
+      '(ˇ▽ˇ)◞*'
   ]
 
   componentDidMount() {
     window.addEventListener('scroll', this.navOnScroll)
-    localStorage.setItem('kaomoji_idx', (this.state.kaomoji_idx+1)%3)
+    localStorage.setItem('kaomoji_idx', (this.state.kaomoji_idx+1)%7)
   }
 
   componentWillUnmount() {
@@ -44,11 +49,11 @@ class TopNav extends Component {
     return (
       <Navbar className="top-nav-new" collapseOnSelect expand="lg"  variant="dark">
         { pathname === '/' ?
-        <a>
+        <a className='kaomoji'>
         {this.kaomojis[this.state.kaomoji_idx]}
         </a> :
         <a href="/">
-          <p className="navbar-brand-logo">Apoorv Khare</p>
+          <p className="navbar-brand-logo">apoorv_khare</p>
         </a>
         }
 
@@ -58,12 +63,15 @@ class TopNav extends Component {
           </Nav>
           </Navbar.Collapse>
 
-          <Nav>
+          <Nav className='navbar_items'>
 
-              <a href="/about"> <u> about </u></a>
+              {/* <a href="/about"> <u> about </u></a>
               <a href="/blogs"> <u> articles </u></a>
-              <a href="/works"> <u> works </u></a>
-              <a target= "_blank" href = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" > <u> résumé </u></a>
+              <a href="/works"> <u> works </u></a> */}
+              <a href="/about">  about </a>
+              <a href="/blogs"> articles </a>
+              <a href="/works">  works </a>
+              <a target= "_blank" href = "" className='resume'> <span>résumé </span></a>
 
           </Nav>
     </Navbar>

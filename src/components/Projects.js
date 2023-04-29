@@ -13,7 +13,7 @@ const ProjectPanel = (props) => {
             <Container fluid className="banner">
             <Col lg= {12} xs = {10} className="intro">
                       <Row className='subHead'>
-                        <h3 style={{width: '10%'}}> projects </h3> 
+                        <h3> $ ~/projects </h3> 
                         <hr className='hrLine' />
                       </Row>
                       <div className='projectPanel'>

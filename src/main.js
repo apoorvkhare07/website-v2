@@ -80,6 +80,14 @@ class Main extends Component{
 /_/   \\_\\   __/ \\___/ \\___/|_|    \\_/   |_|\\_\\_| |_|\\__,_|_|  \\___| \n \
          |_|                                                        \n "
 
+         const text2 = " \
+         ░█████╗░██████╗░░█████╗░░█████╗░██████╗░██╗░░░██╗ \n \
+         ██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║░░░██║ \n \
+         ███████║██████╔╝██║░░██║██║░░██║██████╔╝╚██╗░██╔╝ \n \
+         ██╔══██║██╔═══╝░██║░░██║██║░░██║██╔══██╗░╚████╔╝░ \n \
+         ██║░░██║██║░░░░░╚█████╔╝╚█████╔╝██║░░██║░░╚██╔╝░░ \n \
+         ╚═╝░░╚═╝╚═╝░░░░░░╚════╝░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░ \n \ "
+
         return (
             <Container fluid className="banner">
                     <Col md={8} lg={8} className= "lead">
@@ -87,13 +95,14 @@ class Main extends Component{
                         {/* <h1> Hi, I'm Apoorv </h1> */}
                         
                         <pre dangerouslySetInnerHTML={{__html: text }} className='mouse-cursor-gradient-tracking' style={{color: this.bannerColorList[this.state.idx]}}>
-                           
-                        
                         </pre>
+                        {/* <pre dangerouslySetInnerHTML={{__html: text2 }} className='mouse-cursor-gradient-tracking' style={{color: this.bannerColorList[this.state.idx]}}>
+                        </pre> */}
                         
-                        <p>  <span style={{color: "#ffd479", fontWeight: 700}}> Software developer </span> with love for <span style={{color: "#ffd479", fontWeight: 700}}> Startups </span> and <span style={{color: "#ffd479", fontWeight: 700}}>Blockchain</span>.</p>
+                        <p>  $ <span style={{color: "#ffd479", fontWeight: 500}}> Software developer </span> with love for <span style={{color: "#ffd479", fontWeight: 500}}> Startups </span> and <span style={{color: "#ffd479", fontWeight: 500}}>Blockchain</span>.</p>
                         
-                        <p className='typeWriter'>
+                        <p className='typeWriter'> 
+                        
                         <Typewriter
                           options={{
                             strings: this.quotes,
