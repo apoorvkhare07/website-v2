@@ -12,31 +12,31 @@ class Works extends Component {
             'description': 'DESC', 
             'tags': ['a', 'b']
           },
-          {
-            'heading': 'HEAD',
-            'description': 'DESC', 
-            'tags': ['a', 'b']
-          },
-          {
-            'heading': 'HEAD',
-            'description': 'DESC', 
-            'tags': ['a', 'b']
-          },
-          {
-            'heading': 'HEAD',
-            'description': 'DESC', 
-            'tags': ['a', 'b']
-          },
-          {
-            'heading': 'HEAD',
-            'description': 'DESC', 
-            'tags': ['a', 'b']
-          },
-          {
-            'heading': 'HEAD',
-            'description': 'DESC', 
-            'tags': ['a', 'b']
-          },
+          // {
+          //   'heading': 'HEAD',
+          //   'description': 'DESC', 
+          //   'tags': ['a', 'b']
+          // },
+          // {
+          //   'heading': 'HEAD',
+          //   'description': 'DESC', 
+          //   'tags': ['a', 'b']
+          // },
+          // {
+          //   'heading': 'HEAD',
+          //   'description': 'DESC', 
+          //   'tags': ['a', 'b']
+          // },
+          // {
+          //   'heading': 'HEAD',
+          //   'description': 'DESC', 
+          //   'tags': ['a', 'b']
+          // },
+          // {
+          //   'heading': 'HEAD',
+          //   'description': 'DESC', 
+          //   'tags': ['a', 'b']
+          // },
         ]
     
         return (
@@ -47,7 +47,7 @@ class Works extends Component {
                         <hr className='hrLine' />
                 </Row>
                 <div className='roles'>
-                <caption class="text-left font-semibold lowercase text-low">roles</caption>
+                <caption class="text-left font-semibold text-low">Roles</caption>
                     <WorkTable />
                 </div>
                 <ProjectPanel projectData={projectData} />

@@ -4,7 +4,7 @@ import TopNav from './nav2.js'
 import Home from './Home.js'
 import Container from 'react-bootstrap/Container'
 import About from './Pages/About.js'
-import {Route} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import Contact from './Contact.js'
 import Blogs from './blogs.js'
 import Works from './Pages/works.js'
@@ -15,12 +15,12 @@ class App extends Component {
     return (
       <Container fluid className = 'viewport' >
         <TopNav />
-
-        <Route exact path='/' component={Home} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/blogs' component={Blogs} />
-        <Route exact path='/works' component={Works} />
-
+        <Routes>
+          <Route  path='/'      element={<Home/>} />
+          <Route  path='/about' element={<About/>} />
+          <Route  path='/blogs' element={<Blogs/>} />
+          <Route  path='/works' element={<Works/>} />
+        </Routes>
         <Contact />
       </Container>
 

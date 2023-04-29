@@ -79,7 +79,7 @@ code {
 
 .navbar-brand-logo{
   display: inline !important;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 @media (min-width: 550px ){
@@ -91,7 +91,7 @@ code {
     display: inline !important;
   }
   .navbar-brand-logo{
-    display: none !important;
+    font-weight: bold;
 
   }
 }
@@ -454,6 +454,7 @@ button :focus{
 .intro h3{
   font-size: 1rem;
   font-weight: 700 ;
+  padding-left: 0px !important;
 }
 
 .intro p{
@@ -680,6 +681,7 @@ li {
 
 .row {
   margin: 0 !important;
+  padding: 0 !important;
 }
 
 .text-low {

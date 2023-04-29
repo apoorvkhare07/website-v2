@@ -7,8 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import logo from './static/logo.png';
 import {BrowserRouter as Router, Link} from 'react-router-dom'
-import Pdf from './Docs/dev_cv.pdf'
-import { toHaveStyle } from '@testing-library/jest-dom';
+
 
 class TopNav extends Component {
   state = {
@@ -41,22 +40,17 @@ class TopNav extends Component {
 
   render() {
     const { scrolled } = this.state
-
+    const pathname = window.location.pathname
     return (
       <Navbar className="top-nav-new" collapseOnSelect expand="lg"  variant="dark">
-
-        {/* <a href="/" className="navbar-brand">
-        <img className = "logo" src = {logo} />
-          Apoorv Khare
-        </a> */}
+        { pathname === '/' ?
         <a>
         {this.kaomojis[this.state.kaomoji_idx]}
+        </a> :
+        <a href="/">
+          <p className="navbar-brand-logo">Apoorv Khare</p>
         </a>
-
-        <a href="/" className="navbar-brand-logo">
-        <img className = "logo" src = {logo} />
-
-        </a>
+        }
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
@@ -66,9 +60,9 @@ class TopNav extends Component {
 
           <Nav>
 
-              <Link to="/about"> <u> about </u></Link>
-              <Link to="/blogs"> <u> articles </u></Link>
-              <Link to="/works"> <u> works </u></Link>
+              <a href="/about"> <u> about </u></a>
+              <a href="/blogs"> <u> articles </u></a>
+              <a href="/works"> <u> works </u></a>
               <a target= "_blank" href = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" > <u> résumé </u></a>
 
           </Nav>
