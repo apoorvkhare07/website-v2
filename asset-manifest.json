@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a48a6d9.css",
+    "main.js": "/static/js/main.cae62715.js",
+    "static/media/iitrlogo.png": "/static/media/iitrlogo.0ff951f1df2cc1cacd84.png",
+    "static/media/dev_cv.pdf": "/static/media/dev_cv.21dddd677216ebd080d7.pdf",
+    "static/media/andromeda.png": "/static/media/andromeda.317f3bc927dc5b79edf6.png",
+    "static/media/me.jpg": "/static/media/me.7fd3c16403be190ed987.jpg",
+    "static/media/theme.png": "/static/media/theme.4a01ccf79d7e7177ef1f.png",
+    "static/media/dataphi.png": "/static/media/dataphi.3f90d4eba683675395c9.png",
+    "static/media/icons8-linkedin.svg": "/static/media/icons8-linkedin.f14f64c7679842d9e27f220a4b644851.svg",
+    "static/media/icons8-github.svg": "/static/media/icons8-github.b476634892a69e529a02bb4a215393c6.svg",
+    "static/media/icons8-mail.svg": "/static/media/icons8-mail.6341be606bc7619bb6b1d1b1985c805f.svg",
+    "static/media/icons8-twitter.svg": "/static/media/icons8-twitter.c49a58339ea8bb721572c6e4a33f0966.svg",
+    "index.html": "/index.html",
+    "main.3a48a6d9.css.map": "/static/css/main.3a48a6d9.css.map",
+    "main.cae62715.js.map": "/static/js/main.cae62715.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a48a6d9.css",
+    "static/js/main.cae62715.js"
+  ]
+}
