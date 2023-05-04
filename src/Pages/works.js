@@ -49,7 +49,7 @@ class Works extends Component {
                     <WorkTable />
                 </div>
                 <br />
-                <ProjectPanel projectData={projectData} />
+                {/* <ProjectPanel projectData={projectData} /> */}
                 </Col>
             </Container>
         )

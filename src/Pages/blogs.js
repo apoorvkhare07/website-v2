@@ -24,20 +24,19 @@ class Blogs extends Component {
                         <br/>
                         Also sometimes ramble about my exploits with life, philosophy and art.
                         <br /> <br /> <br /> 
+                        </Row>
                         <Row className='subHead'>
                         <h3> $ ~/recent writings </h3> 
-                        
-                      </Row>
                       <br /> <br /> 
                       </Row>
-                        <div className='projectPanel'>
+                        {/* <div className='projectPanel'>
                           <Post postData={postData}/>
                           <Post postData={postData}/>
                           <Post postData={postData}/>
                           <Post postData={postData}/>
                           <Post postData={postData}/>
                           <Post postData={postData}/>
-                        </div>
+                        </div> */}
                     </Col>
 
             </Container>
